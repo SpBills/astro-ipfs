@@ -1,10 +1,9 @@
 module.exports = {
-  content: [],
-  presets: [],
-  purge: [
+  content: [
     './public/**/*.html',
     './src/**/*.{js,jsx,ts,tsx,vue,astro}',
   ],
+  presets: [],
   mode: 'jit',
   darkMode: 'media', // or 'class'
   theme: {

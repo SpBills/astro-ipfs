@@ -10,7 +10,6 @@ export async function getStaticPaths() {
       props: { post }
     }
   })
-  console.log(postIds);
   return [
     postIds
   ]
@@ -23,8 +22,10 @@ const {post} = Astro.props;
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
+  <style global>
+    @import "../../assets/style/global.css";
+  </style>
   <title>Welcome to Astro</title>
-  <link rel="stylesheet" href={Astro.resolve('../../styles/global.css')}>
 </head>
 
 <body>

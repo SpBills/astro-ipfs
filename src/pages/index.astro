@@ -8,7 +8,9 @@ const posts = await data.json();
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>IPFS Astro Test</title>
-		<link rel="stylesheet" href={Astro.resolve('../styles/global.css')}>
+		<style global>
+			@import "../assets/style/global.css";
+		</style>
 	</head>
 
 	<body>
