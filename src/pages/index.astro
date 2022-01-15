@@ -14,7 +14,7 @@ const posts = await data.json();
 	<body>
 		<main class="flex flex-col p-5">
 		<h1>A simple Astro test on the blockchain.</h1>
-		<small>Made by <a class="text-blue-500" href="https://github.com/SpBills">Spencer Bills</a></small>
+		<small>Made by <a class="text-blue-500" href="https://github.com/SpBills/astro-ipfs">Spencer Bills</a></small>
 		{posts.map(post => (
 			<a class="rounded shadow my-5 p-5" href={`posts/${post.id}`}>
 				<h2 class="mb-5">{post.title[0].toUpperCase() + post.title.substring(1)}</h2>
